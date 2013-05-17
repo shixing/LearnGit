@@ -1,29 +1,6 @@
 LearnGit
 ========
 
-#### git checkout <file>
-
-This would revert the change of <file> to HEAD.
-
-For example, file a.txt:
-```
-Hello world!
-```
-You commit it by 'git commit'
-
-Then you change it to:
-```
-ABC
-```
-Then you use 
-```
-git checkout a.txt
-```
-The file would change to:
-```
-Hello world!
-```
-
 #### git add <file> & git reset HEAD <file>
 git add to add <file> into stage ( waiting to commit ). git reset HEAD <file> will remove <file> from stage.
 
@@ -80,3 +57,7 @@ git commit # only by committing a.txt, you mark a.txt as resolved
 #### Switch branches
 
 2nd change
+
+#### Reference
+
+http://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide/1350157#1350157
