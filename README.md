@@ -68,3 +68,4 @@ git commit # only by committing a.txt, you mark a.txt as resolved
 
 http://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide/1350157#1350157
 
+Bad Change
