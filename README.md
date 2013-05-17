@@ -37,5 +37,7 @@ git add to add <file> into stage ( waiting to commit ). git reset HEAD <file> wi
 
 * cat .git/HEAD: will show which branch does HEAD refer to.
 
+
 Another change
- 
+
+Little Change
