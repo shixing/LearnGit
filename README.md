@@ -94,3 +94,5 @@ git revert 2805 # This means merge 2805's code with HEAD's code and commit it, u
 http://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide/1350157#1350157
 
 Bad Change
+
+Branch 1
