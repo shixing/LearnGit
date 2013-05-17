@@ -58,6 +58,13 @@ git commit # only by committing a.txt, you mark a.txt as resolved
 
 2nd change
 
+#### Some notation
+
+* HEAD: the current branch
+* HEAD^: previous commit of current branch
+* HEAD~n: previous n commit of current branch
+
 #### Reference
 
 http://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide/1350157#1350157
+
