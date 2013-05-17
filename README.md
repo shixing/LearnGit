@@ -47,7 +47,9 @@ This will merge the origin onto your current branch. Your code will be changed. 
 Or you can use git pull to do a git fetch followed by git merge automatically.
 
 * Resolve the conflicts
+
 If there are conflicts, there would be failed when merging. Also, git will change the conflict files. To resolve the conflicts:
+
 ```
 vim a.txt # suppose a.txt is conflicted, you should first change a.txt
 git add a.txt
@@ -57,6 +59,7 @@ git commit # only by committing a.txt, you mark a.txt as resolved
 #### Reset/ Checkout / Revert
 
 * git reset is to set the pointer HEAD:
+
 ```
 git log --oneline
 
@@ -72,6 +75,7 @@ git reset --hard 2805 # This would change HEAD to V0.1.4 and also change the cod
 ```
 
 * git revert 
+
 ```
 git log --oneline
 
@@ -79,11 +83,12 @@ a09a03f V0.1.5
 2805f3f V0.1.4
 
 git revert 2805 # This means merge 2805's code with HEAD's code and commit it, usually cause conflicts.
-
 ```
+
 #### Branch
 
 * create a new branch:
+
 ```
 git branch <new_branch>
 or
@@ -91,17 +96,20 @@ git checkout -b <new_branch>
 ```
 
 * merge with master:
+
 ```
 git checkout master
 git merge <new_branch> 
 ```
 
 * delete branch:
+
 ```
 git branch -d <new_branch>
 ```
 
 * create a branch remotely
+
 ```
 # create a new branch locally
 git branch name_of_branch
