@@ -54,9 +54,34 @@ git add a.txt
 git commit # only by committing a.txt, you mark a.txt as resolved
 ```
 
-#### Switch branches
+#### Reset/ Checkout / Revert
 
-2nd change
+* git reset is to set the pointer HEAD:
+```
+git log --oneline
+
+a09a03f V0.1.5
+2805f3f V0.1.4
+
+git reset 2805 # this would set HEAD pointing to V0.1.4, but the codes won't change
+git checkout -f HEAD # change the code to V0.1.4
+
+# Above two commands are equal to the following:
+
+git reset --hard 2805 # This would change HEAD to V0.1.4 and also change the code
+```
+
+* git revert 
+```
+git log --oneline
+
+a09a03f V0.1.5
+2805f3f V0.1.4
+
+git revert 2805 # This means merge 2805's code with HEAD's code and commit it, usually cause conflicts.
+
+```
+
 
 #### Some notation
 
