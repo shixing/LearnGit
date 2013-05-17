@@ -81,7 +81,39 @@ a09a03f V0.1.5
 git revert 2805 # This means merge 2805's code with HEAD's code and commit it, usually cause conflicts.
 
 ```
+#### Branch
 
+* create a new branch:
+```
+git branch <new_branch>
+or
+git checkout -b <new_branch>
+```
+
+* merge with master:
+```
+git checkout master
+git merge <new_branch> 
+```
+
+* delete branch:
+```
+git branch -d <new_branch>
+```
+
+* create a branch remotely
+```
+# create a new branch locally
+git branch name_of_branch
+git checkout name_of_branch
+# edit/add/remove files    
+# ... 
+# Commit your changes locally
+git add fileName
+git commit -m Message
+# push changes and new branch to remote repository:
+git push origin name_of_branch:name_of_branch
+```
 
 #### Some notation
 
@@ -93,4 +125,3 @@ git revert 2805 # This means merge 2805's code with HEAD's code and commit it, u
 
 http://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide/1350157#1350157
 
-Bad Change
