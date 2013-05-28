@@ -85,6 +85,13 @@ a09a03f V0.1.5
 git revert 2805 # This means merge 2805's code with HEAD's code and commit it, usually cause conflicts.
 ```
 
+* clean the untracked files and directories.
+
+```
+git clean -d -n\-f
+```
+option -d means directory. -n will print which file would delete. -f will delete them.
+
 #### Branch
 
 * create a new branch:
@@ -107,6 +114,12 @@ git merge <new_branch>
 
 ```
 git branch -d <new_branch>
+```
+
+* tracking remote branch
+
+```
+git checkout --track origin/remote_branch
 ```
 
 * create a branch remotely
