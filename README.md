@@ -140,7 +140,9 @@ git push origin name_of_branch:name_of_branch
 
 ### Which kind of commit is counted in contributions?
 
-# If you create a new branch and commit changes to this branch, those commits won't be counted!
+* If you create a new branch and commit changes to this branch, those commits won't be counted!
+
+* If you merge to master locally, and push master to remote master, all the commits will be counted. But Still not sure will be counted in one day or multiple days.
 
 
 
