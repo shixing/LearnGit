@@ -140,6 +140,9 @@ git push origin name_of_branch:name_of_branch
 
 ### Which kind of commit is counted in contributions?
 
+# If you create a new branch and commit changes to this branch, those commits won't be counted!
+
+
 
 #### Some notation
 
