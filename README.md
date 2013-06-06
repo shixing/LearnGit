@@ -68,6 +68,7 @@ a09a03f V0.1.5
 
 git reset 2805 # this would set HEAD pointing to V0.1.4, but the codes won't change
 git checkout -f HEAD # change the code to V0.1.4
+or git checkout -- <file>
 
 # Above two commands are equal to the following:
 
@@ -136,6 +137,9 @@ git commit -m Message
 # push changes and new branch to remote repository:
 git push origin name_of_branch:name_of_branch
 ```
+
+### Which kind of commit is counted in contributions?
+
 
 #### Some notation
 
