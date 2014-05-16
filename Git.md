@@ -145,6 +145,24 @@ git push origin name_of_branch:name_of_branch
 * If you merge to master locally, and push master to remote master, all the commits will be counted. But Still not sure will be counted in one day or multiple days.
 
 
+### About remote `origin`
+
+Origin is just an alias for remote url. It is created by default when you *clone* from remote repository.
+
+* Show origin info
+
+```
+git remote show origin # you can also see the remote urls
+#or
+git romote show https://github.com/shixing/pyPBMT.git
+```
+
+If you init your git, and pull from remote repository, there will not be origin, you need to set it.
+
+```
+git remote add origin https://github.com/shixing/pyPBMT.git
+```
+
 
 #### Some notation
 
