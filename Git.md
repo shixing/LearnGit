@@ -138,6 +138,31 @@ git commit -m Message
 git push origin name_of_branch:name_of_branch
 ```
 
+### Rebase and Merge
+
+#### Merge
+![enter image description here][1]
+
+Merge is three-way merge between C2, C3 and C4. 
+
+![enter image description here][2]
+
+```
+git checkout master
+git merge experiment
+```
+
+Note `git pull` = `git fetch` && `git merge origin/master`
+
+#### Rebase
+Rebase is first generate two diff patches between C3 and C2, C4 and C2. Then apply the two patches in turn. 
+![enter image description here][3]
+```
+git checkout experiment
+git rebase master
+```
+
+
 ### Which kind of commit is counted in contributions?
 
 * If you create a new branch and commit changes to this branch, those commits won't be counted!
@@ -174,3 +199,7 @@ git remote add origin https://github.com/shixing/pyPBMT.git
 
 http://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide/1350157#1350157
 
+
+  [1]: http://git-scm.com/figures/18333fig0327-tn.png
+  [2]: http://git-scm.com/figures/18333fig0328-tn.png
+  [3]: http://git-scm.com/figures/18333fig0330-tn.png
