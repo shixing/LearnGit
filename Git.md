@@ -74,6 +74,17 @@ or git checkout -- <file>
 
 git reset --hard 2805 # This would change HEAD to V0.1.4 and also change the code
 ```
+* git checkout
+
+```
+git log --oneline
+
+a09a03f V0.1.5
+2805f3f V0.1.4
+
+git checkout 2805 # this would change the code to V0.1.4, but commit a09a are still there. 
+git checkout -b new_branch # create a new branch based on 2805;
+```
 
 * git revert 
 
