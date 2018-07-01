@@ -141,6 +141,8 @@ git branch -d <new_branch>
 
 ```
 git checkout --track origin/remote_branch
+or
+git checkout -b remote_branch --track origin/remote_branch
 ```
 
 * create a branch remotely
@@ -155,7 +157,16 @@ git checkout name_of_branch
 git add fileName
 git commit -m Message
 # push changes and new branch to remote repository:
-git push origin name_of_branch:name_of_branch
+git push origin name_of_branch:name_of_branch # = git push origin name_of_branch
+```
+
+* force the branch to a specifio commit
+```
+git log --oneline
+
+a09a03f V0.1.5
+2805f3f V0.1.4
+git branch -f master 2805 # now master will point to 2805.
 ```
 
 ### Rebase and Merge
