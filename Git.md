@@ -1,6 +1,10 @@
 LearnGit
 ========
 
+#### A while new different thought
+
+Git is simple, just a key-value database, each file is checksumed by its content. Each commits only contains the snapshot of files in staging areas (the files added by `git add`). It's not "file oriented delta storage". 
+
 #### git add <file> & git reset HEAD <file>
 git add to add <file> into stage ( waiting to commit ). git reset HEAD <file> will remove <file> from stage.
 
@@ -11,6 +15,8 @@ git add to add <file> into stage ( waiting to commit ). git reset HEAD <file> wi
 * git show <branch/commit>: will show the commit's information, usually includes summary and diff information.
 
 * git log --graph --oneline: will show a brief history of all commits in current branch
+
+* git log --graph --oneline --all: will show a brief history of all commits in all branches
 
 * cat .git/HEAD: will show which branch does HEAD refer to.
 
@@ -83,6 +89,9 @@ a09a03f V0.1.5
 2805f3f V0.1.4
 
 git checkout 2805 # this would change the code to V0.1.4, but commit a09a are still there. 
+git chekcout -f # == git checkout -f HEAD if there's changes on working tree, with -f, the command will be aborted. 
+git checkout -- a.txt # = git chekcout <Index> -- a.txt, will change the a.txt to current index's content. 
+git checkout 2805 -- a.txt # will change a.txt to 2805's a.txt, it will also update the index to 2805's content.
 git checkout -b new_branch # create a new branch based on 2805;
 ```
 
