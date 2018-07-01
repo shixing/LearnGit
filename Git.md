@@ -7,6 +7,15 @@ Git is simple, just a key-value database, each file is checksumed by its content
 
 #### git add <file> & git reset HEAD <file>
 git add to add <file> into stage ( waiting to commit ). git reset HEAD <file> will remove <file> from stage.
+  
+#### git reset and git revert
+
+* git reset have 4 modes: 
+  * --soft: don't change index, don't change working tree
+  * --mixed: (this is default), reset the index, don't change working tree
+  * --hard : reset both index and working tree. 
+* git reset HEAD : reset index (reverse opertaion of git add)
+* git reset HEAD^: move current branch back to previous commit, reset index, but don't change working tree. 
 
 #### Show information
 
@@ -94,17 +103,26 @@ git checkout -- a.txt # = git chekcout <Index> -- a.txt, will change the a.txt t
 git checkout 2805 -- a.txt # will change a.txt to 2805's a.txt, it will also update the index to 2805's content.
 git checkout -b new_branch # create a new branch based on 2805;
 ```
+* different vs. git reset
+  * git-checkout change HEAD and working tree and index; 
+  * git checkout -f, discard current change;
+* git reset change HEAD and branch tag and index, but not working tree
+  * git reset --hard, also the working tree.
+  * git reset HEAD, unstage the index. 
 
-* git revert 
-
+* git revert
+git revert 
 ```
 git log --oneline
 
 a09a03f V0.1.5
 2805f3f V0.1.4
 
-git revert 2805 # This means merge 2805's code with HEAD's code and commit it, usually cause conflicts.
+git revert HEAD # This will create a new commit, and is working tree will be same as 2805; We can do this on published branches. 
 ```
+
+
+
 
 * clean the untracked files and directories.
 
